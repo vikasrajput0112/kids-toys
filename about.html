@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,91 +16,94 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #f7f9fc;
-            color: #333;
+            background: #f8fafc;
+            color: #334155;
         }
 
         header {
-            background: #ff6b6b;
-            color: white;
-            padding: 20px 50px;
+            background: white;
+            padding: 18px 7%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
         }
 
-        header h1 {
-            font-size: 28px;
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #5b7cfa;
         }
 
         nav a {
-            color: white;
             text-decoration: none;
-            margin-left: 25px;
-            font-size: 16px;
-            font-weight: bold;
+            color: #475569;
+            margin-left: 22px;
+            font-weight: 600;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #5b7cfa;
         }
 
         .hero {
-            background: #ffe66d;
-            text-align: center;
+            background: #eef4ff;
             padding: 70px 20px;
+            text-align: center;
         }
 
-        .hero h2 {
+        .hero h1 {
             font-size: 42px;
             margin-bottom: 15px;
-            color: #222;
         }
 
         .hero p {
-            font-size: 20px;
+            color: #64748b;
+            font-size: 18px;
         }
 
         .content {
             max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
+            margin: auto;
+            padding: 60px 20px;
         }
 
         .content h2 {
             text-align: center;
-            font-size: 32px;
             margin-bottom: 25px;
-            color: #ff6b6b;
+            color: #5b7cfa;
         }
 
         .content p {
-            font-size: 18px;
-            line-height: 1.8;
-            margin-bottom: 20px;
             text-align: center;
+            line-height: 1.8;
+            color: #64748b;
+            margin-bottom: 20px;
+            font-size: 17px;
         }
 
         .cards {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 25px;
-            justify-content: center;
-            margin-top: 35px;
-            flex-wrap: wrap;
+            margin-top: 40px;
         }
 
         .card {
             background: white;
-            width: 280px;
-            padding: 30px 20px;
+            padding: 30px;
             text-align: center;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        .card .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
         }
 
         .card h3 {
-            margin-bottom: 12px;
-            color: #ff6b6b;
+            margin-bottom: 10px;
         }
 
         .card p {
@@ -107,80 +111,100 @@
         }
 
         footer {
-            margin-top: 50px;
-            background: #333;
-            color: white;
+            background: #eef2f7;
             text-align: center;
-            padding: 20px;
+            padding: 25px;
+            color: #64748b;
+        }
+
+        @media(max-width:800px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>🧸 Kids Toys</h1>
+<header>
+    <div class="logo">🧸 Kids Toys</div>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="categories.html">Categories</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
 
-    <section class="hero">
-        <h2>About Kids Toys</h2>
-        <p>Making childhood more fun, creative and memorable! 🎈</p>
-    </section>
+<section class="hero">
+    <h1>About Us</h1>
+    <p>Making childhood more fun, creative and memorable.</p>
+</section>
 
-    <section class="content">
+<section class="content">
 
-        <h2>Who We Are</h2>
+    <h2>Who We Are</h2>
 
-        <p>
-            Welcome to Kids Toys! We are passionate about bringing
-            fun, creativity and happiness to children through exciting
-            and quality toys.
-        </p>
+    <p>
+        Welcome to Kids Toys! We are passionate about bringing
+        fun, creativity and happiness to children through exciting
+        and quality toys.
+    </p>
 
-        <p>
-            Our goal is to provide children with toys that encourage
-            imagination, learning and creativity while giving parents
-            a simple and enjoyable shopping experience.
-        </p>
+    <p>
+        Our goal is to provide children with toys that encourage
+        imagination, learning and creativity while giving parents
+        a simple and enjoyable shopping experience.
+    </p>
 
-        <div class="cards">
+    <div class="cards">
 
-            <div class="card">
-                <h3>🎨 Creativity</h3>
-                <p>
-                    We believe toys should encourage children to explore
-                    their imagination and creativity.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>🧸 Quality</h3>
-                <p>
-                    We focus on providing fun and reliable toys suitable
-                    for children.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>❤️ Happiness</h3>
-                <p>
-                    Our mission is simple — bring smiles and happiness
-                    to every child.
-                </p>
-            </div>
-
+        <div class="card">
+            <div class="icon">🎨</div>
+            <h3>Creativity</h3>
+            <p>
+                Toys that encourage imagination and creative thinking.
+            </p>
         </div>
 
-    </section>
+        <div class="card">
+            <div class="icon">⭐</div>
+            <h3>Quality</h3>
+            <p>
+                We focus on providing enjoyable and reliable toys.
+            </p>
+        </div>
 
-    <footer>
-        <p>© 2026 Kids Toys. All Rights Reserved.</p>
-    </footer>
+        <div class="card">
+            <div class="icon">❤️</div>
+            <h3>Happiness</h3>
+            <p>
+                Our goal is to bring smiles to every child.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Kids Toys. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
