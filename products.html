@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products - Kids Toys</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #334155;
+        }
+
+        header {
+            background: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #5b7cfa;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #475569;
+            margin-left: 22px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #5b7cfa;
+        }
+
+        .hero {
+            background: #eef4ff;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            color: #64748b;
+            font-size: 18px;
+        }
+
+        .products {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .product {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        .icon {
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+        .product h2 {
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .price {
+            color: #16a34a !important;
+            font-size: 21px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        footer {
+            background: #eef2f7;
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+        }
+
+        @media(max-width:800px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🧸 Kids Toys</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="categories.html">Categories</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Our Products</h1>
+    <p>Discover our collection of fun and exciting toys.</p>
+</section>
+
+<section class="products">
+
+    <div class="product">
+        <div class="icon">🧸</div>
+        <h2>Teddy Bear</h2>
+        <p>Soft and cute teddy bear for kids.</p>
+        <p class="price">₹499</p>
+    </div>
+
+    <div class="product">
+        <div class="icon">🚗</div>
+        <h2>Toy Car</h2>
+        <p>Colorful racing car for exciting play.</p>
+        <p class="price">₹299</p>
+    </div>
+
+    <div class="product">
+        <div class="icon">🤖</div>
+        <h2>Robot</h2>
+        <p>Interactive robot for creative play.</p>
+        <p class="price">₹799</p>
+    </div>
+
+    <div class="product">
+        <div class="icon">🧩</div>
+        <h2>Puzzle</h2>
+        <p>Fun puzzles designed to improve thinking skills.</p>
+        <p class="price">₹349</p>
+    </div>
+
+    <div class="product">
+        <div class="icon">🎨</div>
+        <h2>Art Kit</h2>
+        <p>Creative art kit for young artists.</p>
+        <p class="price">₹599</p>
+    </div>
+
+    <div class="product">
+        <div class="icon">⚽</div>
+        <h2>Football</h2>
+        <p>Fun outdoor football for active kids.</p>
+        <p class="price">₹399</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Kids Toys. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
