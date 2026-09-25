@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services - Kids Toys</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #334155;
+        }
+
+        header {
+            background: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #5b7cfa;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #475569;
+            margin-left: 22px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #5b7cfa;
+        }
+
+        .hero {
+            background: #eef4ff;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            color: #64748b;
+            font-size: 18px;
+        }
+
+        .services {
+            max-width: 1050px;
+            margin: auto;
+            padding: 60px 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service {
+            background: white;
+            text-align: center;
+            padding: 35px 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 18px;
+        }
+
+        .service h2 {
+            margin-bottom: 12px;
+        }
+
+        .service p {
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        footer {
+            background: #eef2f7;
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+        }
+
+        @media(max-width:800px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🧸 Kids Toys</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="categories.html">Categories</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Our Services</h1>
+    <p>Making your toy shopping experience easy and enjoyable.</p>
+</section>
+
+<section class="services">
+
+    <div class="service">
+        <div class="icon">🚚</div>
+        <h2>Fast Delivery</h2>
+        <p>
+            Get your favorite toys delivered safely and conveniently.
+        </p>
+    </div>
+
+    <div class="service">
+        <div class="icon">🎁</div>
+        <h2>Gift Packaging</h2>
+        <p>
+            Make birthdays and special occasions memorable with
+            beautiful gift packaging.
+        </p>
+    </div>
+
+    <div class="service">
+        <div class="icon">💬</div>
+        <h2>Customer Support</h2>
+        <p>
+            Our support team is available to help with your questions.
+        </p>
+    </div>
+
+    <div class="service">
+        <div class="icon">🔄</div>
+        <h2>Easy Returns</h2>
+        <p>
+            Simple return assistance for eligible products.
+        </p>
+    </div>
+
+    <div class="service">
+        <div class="icon">🎈</div>
+        <h2>Birthday Specials</h2>
+        <p>
+            Special toy options for birthdays and children's events.
+        </p>
+    </div>
+
+    <div class="service">
+        <div class="icon">⭐</div>
+        <h2>Quality Products</h2>
+        <p>
+            Carefully selected toys designed for fun and creativity.
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Kids Toys. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
