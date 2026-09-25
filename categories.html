@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Categories - Kids Toys</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #334155;
+        }
+
+        header {
+            background: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #5b7cfa;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #475569;
+            margin-left: 22px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #5b7cfa;
+        }
+
+        .hero {
+            background: #eef4ff;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            color: #64748b;
+            font-size: 18px;
+        }
+
+        .categories {
+            max-width: 1050px;
+            margin: auto;
+            padding: 60px 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .category {
+            background: white;
+            padding: 35px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        .icon {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .category h2 {
+            margin-bottom: 10px;
+        }
+
+        .category p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #eef2f7;
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+        }
+
+        @media(max-width:800px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .categories {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🧸 Kids Toys</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="categories.html">Categories</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Categories</h1>
+    <p>Explore toys by category.</p>
+</section>
+
+<section class="categories">
+
+    <div class="category">
+        <div class="icon">🧸</div>
+        <h2>Soft Toys</h2>
+        <p>Comfortable and adorable toys for children.</p>
+    </div>
+
+    <div class="category">
+        <div class="icon">🚗</div>
+        <h2>Vehicles</h2>
+        <p>Cars, trucks and exciting toy vehicles.</p>
+    </div>
+
+    <div class="category">
+        <div class="icon">🤖</div>
+        <h2>Robots</h2>
+        <p>Interactive and entertaining robot toys.</p>
+    </div>
+
+    <div class="category">
+        <div class="icon">🧩</div>
+        <h2>Puzzles</h2>
+        <p>Fun puzzles that encourage thinking and learning.</p>
+    </div>
+
+    <div class="category">
+        <div class="icon">🎨</div>
+        <h2>Arts & Crafts</h2>
+        <p>Creative kits for young artists.</p>
+    </div>
+
+    <div class="category">
+        <div class="icon">⚽</div>
+        <h2>Outdoor Toys</h2>
+        <p>Fun toys for active outdoor play.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Kids Toys. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
